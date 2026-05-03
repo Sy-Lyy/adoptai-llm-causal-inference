@@ -1,0 +1,10 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+requests
+torch
+transformers
+accelerate
+huggingface_hub
