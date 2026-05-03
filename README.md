@@ -41,41 +41,8 @@ Petfinder API → data collection → cleaning → EDA → logistic regression +
 ├── README.md
 ├── assets/
 ├── notebooks/
-│   └── analysis.ipynb          # original end-to-end notebook
-├── src/
-│   ├── data_collection.py      # Petfinder API fetch
-│   ├── preprocessing.py        # data cleaning & feature engineering
-│   ├── eda.py                  # exploratory data analysis & visualizations
-│   ├── causal_inference.py     # logistic regression + PSM
-│   └── llm_recommendations.py  # HuggingFace prompt & LLM output
+│   └── cat_adoption_llm_notebook.ipynb
 └── requirements.txt
-```
-
----
-
-## Usage
-
-```bash
-# 1. Collect data
-python src/data_collection.py
-
-# 2. Clean and preprocess
-python src/preprocessing.py
-
-# 3. Run EDA
-python src/eda.py
-
-# 4. Causal inference
-python src/causal_inference.py
-
-# 5. Generate LLM recommendations
-python src/llm_recommendations.py
-```
-
-Set environment variables before running:
-```bash
-export PETFINDER_TOKEN=your_token_here
-export HUGGINGFACE_TOKEN=your_token_here
 ```
 
 ---
@@ -88,4 +55,4 @@ Python · pandas · scikit-learn · matplotlib · seaborn · HuggingFace Transfo
 
 ## Note on Data
 
-Data is fetched live from the Petfinder API and not included in this repository. Run `data_collection.py` to reproduce the dataset.
+Data is fetched live from the Petfinder API and not included in this repository.
